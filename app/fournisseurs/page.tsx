@@ -14,12 +14,31 @@ export default function SuppliersPage() {
       </div>
 
       <Tabs defaultValue="liste" className="w-full">
-        <TabsList className="grid w-full grid-cols-5">
-          <TabsTrigger value="liste">Liste des Fournisseurs</TabsTrigger>
-          <TabsTrigger value="performance">Évaluation</TabsTrigger>
-          <TabsTrigger value="commandes">Suivi des Commandes</TabsTrigger>
-          <TabsTrigger value="litiges">Gestion des Litiges</TabsTrigger>
-          <TabsTrigger value="strategic">Analyse Stratégique</TabsTrigger>
+        <TabsList className="flex w-full overflow-x-auto snap-x snap-mandatory">
+          <TabsTrigger value="liste" className="flex-shrink-0 text-xs sm:text-sm snap-start min-w-[120px] sm:min-w-0">
+            Liste des Fournisseurs
+          </TabsTrigger>
+          <TabsTrigger
+            value="performance"
+            className="flex-shrink-0 text-xs sm:text-sm snap-start min-w-[90px] sm:min-w-0"
+          >
+            Évaluation
+          </TabsTrigger>
+          <TabsTrigger
+            value="commandes"
+            className="flex-shrink-0 text-xs sm:text-sm snap-start min-w-[140px] sm:min-w-0"
+          >
+            Suivi des Commandes
+          </TabsTrigger>
+          <TabsTrigger value="litiges" className="flex-shrink-0 text-xs sm:text-sm snap-start min-w-[130px] sm:min-w-0">
+            Gestion des Litiges
+          </TabsTrigger>
+          <TabsTrigger
+            value="strategic"
+            className="flex-shrink-0 text-xs sm:text-sm snap-start min-w-[140px] sm:min-w-0"
+          >
+            Analyse Stratégique
+          </TabsTrigger>
         </TabsList>
         <TabsContent value="liste">
           <Card>
